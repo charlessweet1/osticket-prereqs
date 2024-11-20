@@ -78,13 +78,34 @@ You can now enter 'http://127.0.0.1/' and it should return a splash screen for I
 
 From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)  
 </p>
-
 <p>
 <img src="https://i.imgur.com/XFUaltz.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+</p>
 
-  
+<p>
+<h3>Step 6: Install the Rewrite Module</h3>
 </p>
 <p>
-Step 3: Download osTicket Installation Files to VM  
+<img src="https://i.imgur.com/RwacG67.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
 </p>
-<br />
+
+<p>
+<h3>Step 7: Create the directory C:\PHP</h3>
+
+1. Right-click the manila folder on the taskbar
+2. Choose File Explorer
+3. Click the chevron for This PC
+4. Click Windows (C:)
+5. Right-click and choose New Folder
+6. Rename the folder PHP  
+</p>
+<p>
+<img src="https://i.imgur.com/DkY0y1h.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+</p>
+
+<p>
+<h3>Step 8: Install PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder</h3>
+</p>
+<p>
+<img src="https://i.imgur.com/b9hlgqC.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+</p>
