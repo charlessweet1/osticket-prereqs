@@ -39,36 +39,50 @@ Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs
 </p>
 
 <p>
-<img src="https://i.imgur.com/dlnWxf3.png" height="80%" width="80%" alt="Filter for ICMP"/>
+<img src="https://i.imgur.com/dlnWxf3.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
 Step 2: Log into the VM with Remote Desktop 
 </p>
 
 <p>
-<img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
 <h3> Step 3: Download osTicket Installation Files to VM </h3> 
+
+We will use the files in this folder to install osTicket and some of the dependencies.   
 </p>
 
 <p>
-<img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/UBjKqdS.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
-<h3>Step 3: Download osTicket Installation Files to VM </h3> 
+<h3>Step 4: Install / Enable IIS in Windows WITH CGI </h3> 
+
+1. Go to start menu
+2. Type in Control Panel
+3. Click Uninstall Programs
+4. Click Turn Windows Features On and Off
+5. Tick Internet Information Services > World Wide Web Services > Application Development Features > CGI
+6. Click OK
+
+You can now enter 'http://127.0.0.1/' and it should return a splash screen for IIS. 
 </p>
 
 <p>
-<img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/Fggqsfc.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
-Step 3: Download osTicket Installation Files to VM  
+<h3>Step 5: Step 5: Install PHP Manager for IIS</h3>
+
+From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)  
 </p>
-<br />
 
 <p>
-<img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/XFUaltz.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+
+  
 </p>
 <p>
 Step 3: Download osTicket Installation Files to VM  
