@@ -37,7 +37,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs  
 </p>
-<br />
 
 <p>
 <img src="https://i.imgur.com/dlnWxf3.png" height="80%" width="80%" alt="Filter for ICMP"/>
@@ -45,7 +44,6 @@ Step 1: Create an Azure Virtual Machine Windows 10, 4 vCPUs
 <p>
 Step 2: Log into the VM with Remote Desktop 
 </p>
-<br />
 
 <p>
 <img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
@@ -58,9 +56,8 @@ Step 2: Log into the VM with Remote Desktop
 <img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
 </p>
 <p>
-Step 3: Download osTicket Installation Files to VM  
+<h3>Step 3: Download osTicket Installation Files to VM </h3> 
 </p>
-<br />
 
 <p>
 <img src="https://i.imgur.com/7E93uXW.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
