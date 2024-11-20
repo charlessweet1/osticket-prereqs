@@ -26,8 +26,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Step 7: Create the directory C:\PHP
 - Step 8: Install PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
 - Step 9: Install VC_redist.x86.exe
-- Step 10: 
-
+- Step 10: Install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+- Step 11: Open IIS as an Admin
+- Step 12: Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
+- Step 13: Reload IIS (Open IIS, Stop and Start the server)
+- Step 14: Install osTicket v1.15.8
 
 <h2>Installation Steps</h2>
 
@@ -79,14 +82,14 @@ You can now enter 'http://127.0.0.1/' and it should return a splash screen for I
 From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)  
 </p>
 <p>
-<img src="https://i.imgur.com/XFUaltz.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/XFUaltz.png" height="80%" width="80%" alt=""/>
 </p>
 
 <p>
 <h3>Step 6: Install the Rewrite Module</h3>
 </p>
 <p>
-<img src="https://i.imgur.com/RwacG67.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/RwacG67.png" height="80%" width="80%" alt=""/>
 </p>
 
 <p>
@@ -100,12 +103,80 @@ From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (
 6. Rename the folder PHP  
 </p>
 <p>
-<img src="https://i.imgur.com/DkY0y1h.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/DkY0y1h.png" height="80%" width="80%" alt=""/>
 </p>
 
 <p>
 <h3>Step 8: Install PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder</h3>
 </p>
 <p>
-<img src="https://i.imgur.com/b9hlgqC.png" height="80%" width="80%" alt="Log into Remote Desktop"/>
+<img src="https://i.imgur.com/b9hlgqC.png" height="80%" width="80%" alt=""/>
 </p>
+
+<p>
+<h3>Step 9: Install VC_redist.x86.exe</h3>
+</p>
+<p>
+<img src="https://i.imgur.com/5xCSTHQ.png" height="80%" width="80%" alt=""/>
+</p>
+
+<h3>Step 10: Step 10: Install MySQL 5.5.62 (mysql-5.5.62-win32.msi) </h3>
+
+- Typical Setup ->
+- Launch Configuration Wizard (after install) ->
+- Standard Configuration ->
+- Username: root
+- Password: root
+
+<p>
+<img src="https://i.imgur.com/bn4PNDX.png" height="80%" width="80%" alt=""/>
+</p>
+<p>
+<h3>Step 11: Open IIS as an Admin </h3>
+</p>
+<p>
+<img src="https://i.imgur.com/yeFYtWs.png" height="80%" width="80%" alt=""/>
+</p>
+
+<p>
+<h3>Step 12: Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)</h3>
+</p>
+<p>
+<img src="https://i.imgur.com/IJy7kNT.png" height="80%" width="80%" alt=""/>
+</p>
+
+<p>
+<h3>Step 13: Reload IIS (Open IIS, Stop and Start the server)</h3>
+</p>
+<p>
+<img src="https://i.imgur.com/fTAIcTx.png" height="80%" width="80%" alt=""/>
+</p>
+
+<h3>Step 14: Install osTicket v1.15.8</h3>
+<p>
+1. From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”. <br>
+2. Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket” 
+3. Reload IIS (Open IIS, Stop and Start the server)
+</p>
+<p>
+<img src="https://i.imgur.com/MarKOex.png" height="80%" width="80%" alt=""/>
+</p>
+
+<h3>Go to sites -> Default -> osTicket</h3>
+<p>
+On the right, click “Browse *:80” <br />
+
+- Note that some extensions are not enabled
+  - Go back to IIS, sites -> Default -> osTicket
+  - Double-click PHP Manager
+  - Click “Enable or disable an extension”
+  - Enable: php_imap.dll
+  - Enable: php_intl.dll
+  - Enable: php_opcache.dll
+  - Refresh the osTicket site in your browser, observe the changes
+
+<p>
+<img src="https://i.imgur.com/OgdAQF2.png" height="80%" width="80%" alt=""/>
+</p>
+
+
