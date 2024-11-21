@@ -33,6 +33,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Step 14: Install osTicket v1.15.8
 - Step 15: Rename ost-config.php File
 - Step 16: Continue setting up osTicket in Browser
+- Step 17: Install HeidiSQL
+- Step 18: 
 
 
 
@@ -221,8 +223,32 @@ New Permissions -> Everyone -> All </br>
 3. Default email (receives email from customers) 
 </p>
 <p>
-<img src="https://i.imgur.com/JTMxcXa.png" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/FUwZPbS.png" height="80%" width="80%" alt=""/>
 </p>
 
+<h3>Step 17: Install HeidiSQL</h3>
 
+<p>
+1. Open Heidi SQL </br>
+2. Create a new session, root/root </br>
+3. Connect to the session </br>
+4. Right-click Unamed > Create New > Database </br>
+5. Name the new database “osTicket” </br>
+
+</p>
+<p>
+<img src="https://i.imgur.com/mjquXsh.png" height="80%" width="80%" alt=""/>
+</p>
+
+<h3>Step 18: Continue setting up osTicket in Browser</h3>
+
+<p>
+1. MySQL Database: osTicket </br>
+2. MySQL Username: root </br>
+3. MySQL Password: root </br>
+4. Click “Install Now!” 
+</p>
+<p>
+<img src="https://i.imgur.com/FUwZPbS.png" height="80%" width="80%" alt=""/>
+</p>
 
