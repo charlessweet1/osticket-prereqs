@@ -31,7 +31,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Step 12: Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 - Step 13: Reload IIS (Open IIS, Stop and Start the server)
 - Step 14: Install osTicket v1.15.8
-- Step 15: Rename: ost-config.php
+- Step 15: Rename ost-config.php File
+- Step 16: Continue setting up osTicket in Browser
 
 
 
@@ -195,17 +196,33 @@ On the right, click “Browse *:80” <br />
 <h3>Step 15: Rename: ost-config.php</h3>
 
 <p>
-Rename: ost-config.php <br/>
-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php <br/>
-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php  
+Rename ost-config.php from: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <p>
 <img src="https://i.imgur.com/smksfV2.png" height="80%" width="80%" alt=""/>
 </p>
 
+<h3>Step 16: Assign permissions</h3>
 
-Rename ost-config.php
-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+<p>
+Assign Permissions: ost-config.php </br>
+Disable inheritance -> Remove All </br>
+New Permissions -> Everyone -> All </br>
+</p>
+<p>
+<img src="https://i.imgur.com/JTMxcXa.png" height="80%" width="80%" alt=""/>
+</p>
+
+<h3>Step 16: Continue setting up osTicket in Browser</h3>
+
+<p>
+1. Continue Setting up osTicket in the browser (click Continue) </br>
+2. Name Helpdesk </br>
+3. Default email (receives email from customers) 
+</p>
+<p>
+<img src="https://i.imgur.com/JTMxcXa.png" height="80%" width="80%" alt=""/>
+</p>
+
 
 
