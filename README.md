@@ -249,6 +249,6 @@ New Permissions -> Everyone -> All </br>
 4. Click “Install Now!” 
 </p>
 <p>
-<img src="https://i.imgur.com/FUwZPbS.png" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/q2MQT3p.png" height="80%" width="80%" alt=""/>
 </p>
 
