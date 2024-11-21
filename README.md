@@ -31,6 +31,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Step 12: Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 - Step 13: Reload IIS (Open IIS, Stop and Start the server)
 - Step 14: Install osTicket v1.15.8
+- Step 15: Rename: ost-config.php
+
+
 
 <h2>Installation Steps</h2>
 
@@ -178,5 +181,31 @@ On the right, click “Browse *:80” <br />
 <p>
 <img src="https://i.imgur.com/OgdAQF2.png" height="80%" width="80%" alt=""/>
 </p>
+
+<h3>Step 15: Rename: ost-config.php</h3>
+<p>
+1. From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”. <br>
+2. Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket” 
+3. Reload IIS (Open IIS, Stop and Start the server)
+</p>
+<p>
+<img src="https://i.imgur.com/MarKOex.png" height="80%" width="80%" alt=""/>
+</p>
+
+<h3>Step 15: Rename: ost-config.php</h3>
+
+<p>
+Rename: ost-config.php <br/>
+From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php <br/>
+To: C:\inetpub\wwwroot\osTicket\include\ost-config.php  
+</p>
+<p>
+<img src="https://i.imgur.com/smksfV2.png" height="80%" width="80%" alt=""/>
+</p>
+
+
+Rename ost-config.php
+From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 
